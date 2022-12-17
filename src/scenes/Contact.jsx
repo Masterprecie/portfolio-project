@@ -1,7 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import contactImage from '../assets/contact-image.jpeg'
 
 const Contact = () => {
 	const {
@@ -56,7 +55,7 @@ const Contact = () => {
 						}}
 						className="flex justify-center"
 					>
-						<img src={contactImage} alt="contact" />
+						<img src="../assets/contact-image.jpeg" alt="contact" />
 					</motion.div>
 
 					<motion.div

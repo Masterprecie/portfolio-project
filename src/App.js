@@ -10,6 +10,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
+//import ProjectImages from "./scenes/ProjectImages";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -91,6 +92,7 @@ function App() {
         </motion.div>
       </div>
       <Footer />
+      {/* <ProjectImages/> */}
     </div>
   );
 }

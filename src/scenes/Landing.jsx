@@ -1,7 +1,6 @@
 import useMediaQuery from '../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import DP8 from '../assets/DP8.jpg'
 import SocialMediaIcons from '../components/SocialMediaIcons'
 import LineGradient from '../components/LineGradient'
 
@@ -14,7 +13,7 @@ const Landing = ({ setSelectedPage }) => {
 
 	return (
 		<>
-			<section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-16 py-2'>
+			<section id='home' className='lg:flex lg:justify-between md:items-center md:h-full gap-16 py-2'>
 
 				{/* IMAGE SECTION */}
 
@@ -23,13 +22,13 @@ const Landing = ({ setSelectedPage }) => {
 						<div
 							className="relative z-0 ml-20 before:absolute before:-top-7 before:-left-7 before:rounded-t-[400px] before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
 						>
-							<img src={DP8}
+							<img src="assets/DP8.jpg"
 								alt="profile"
 								className='hover:filter rounded-t-[400px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
 							/>
 						</div>
 					) : (
-						<img src={DP8}
+						<img src="assets/DP8.jpg"
 							alt="profile"
 							className='hover:filter rounded-t-[400px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
 						/>
@@ -50,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
 							visible: { opacity: 1, x: 0 },
 						}}
 					>
-						<p className="text-6xl font-playfair z-10 text-center md:text-start">
+						<p className="text-6xl font-playfair z-10 text-center lg:text-start md:text-center">
 							Precious{"   "}
 							<span
 								className="md:relative md:text-deep-blue md:font-semibold z-20 md:before:content-brush
@@ -60,15 +59,14 @@ const Landing = ({ setSelectedPage }) => {
 							</span>
 						</p>
 
-						<p className="mt-10 mb-7 text-sm text-center md:text-start">
-							Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-							viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+						<p className="mt-10 mb-7 text-sm text-center lg:text-start md:text-center">
+							I am a Front-End Web developer, purpose driven and easy going
 						</p>
 					</motion.div>
 
 					{/* CALL TO ACTION */}
 					<motion.div
-						className='flex mt-5 justify-center md:justify-start'
+						className='flex mt-5 lg:justify-start md:justify-center'
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true, amount: 0.5 }}
@@ -78,14 +76,18 @@ const Landing = ({ setSelectedPage }) => {
 							visible: { opacity: 1, x: 0 }
 						}}
 					>
-						<AnchorLink
+
+						<a
 							className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500 '
-							onClick={() => setSelectedPage('contact')}
-							href='#contact'
+							href="https://drive.google.com/file/d/1vhhtzOlQtbB6pPXOCY8J8MkCE-R2Vdqp/view?usp=share_link"
+							target="_blank" rel='noreferrer'
 						>
-							Contact Me
-						</AnchorLink>
+							Download CV
+
+						</a>
+
 						<AnchorLink
+
 							className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
 							onClick={() => setSelectedPage('contact')}
 							href='#contact'
@@ -98,7 +100,7 @@ const Landing = ({ setSelectedPage }) => {
 						</AnchorLink>
 					</motion.div>
 					<motion.div
-						className='flex mt-5 justify-center md:justify-start'
+						className='flex mt-5 justify-center lg:justify-start md:justify-center'
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true, amount: 0.5 }}
@@ -112,9 +114,10 @@ const Landing = ({ setSelectedPage }) => {
 					</motion.div>
 				</div>
 			</section >
+
 			<LineGradient />
 		</>
 	)
 }
 
-export default Landing
+export default Landing;

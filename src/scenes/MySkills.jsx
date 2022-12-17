@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skillsImage from '../assets/skills-image.png'
+
 
 const MySkills = () => {
 	const isAboveLarge = useMediaQuery("(min-width: 990px)");
@@ -22,14 +22,58 @@ const MySkills = () => {
 						}}
 					>
 						<p className="font-playfair font-semibold text-3xl mb-2">
-							MY <span className="text-red">SKILLS</span>
+							SKILLS <span className="text-red"> & TECHNOLOGIES</span>
 						</p>
 						<LineGradient width="w-1/3" />
 						<p className="mt-5 mb-7 text-xs">
-							Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-							fames odio in at.
+							I am proficient in Bootstrap, Tailwind CSS and React Js. I will bring your design into reality.
 						</p>
+						<div className="flex gap-2 justify-between">
+							<div>
+								<div className="flex gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>HTML</p>
+								</div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>CSS</p>
+								</div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>JAVASCRIPT</p>
+								</div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>REACT JS</p>
+								</div>
+
+							</div>
+
+							<div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>BOOTSTRAP</p>
+								</div>
+
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>TAILWIND CSS</p>
+								</div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>CHAKRA UI</p>
+								</div>
+								<div className="flex  gap-2 ">
+									<img src="assets/GreenTick.png" alt="tick" className="w-6 h-5" />
+									<p>PYTHON</p>
+								</div>
+							</div>
+
+
+
+						</div>
 					</motion.div>
+
 
 					<div className="mt-16 md:mt-0">
 						{isAboveLarge ? (
@@ -40,11 +84,11 @@ const MySkills = () => {
 								<img
 									alt="skills"
 									className="z-10 pt-0 md:pt-10"
-									src={skillsImage}
+									src="assets/skills-image.png"
 								/>
 							</div>
 						) : (
-							<img alt="skills" className="z-10 pt-0 md:pt-10" src={skillsImage} />
+							<img alt="skills" className="z-10 pt-0 md:pt-10" src="assets/skills-image.png" />
 						)}
 					</div>
 				</div>

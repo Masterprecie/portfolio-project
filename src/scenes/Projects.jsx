@@ -23,13 +23,12 @@ const Project = ({ title }) => {
 	return (
 		<motion.div variants={projectVariant} className="relative">
 			<div className={overlayStyles}>
-				<p className="text-1xl font-playfair">{title}</p>
-				<p className="mt-3 text-xs">
-					Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-					porttitor accumsan tincidunt.
+				<p className="text-2xl font-playfair">{title}</p>
+				<p className="mt-7">
+					Checkout My Recent Projects
 				</p>
 			</div>
-			<img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+			<img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
 		</motion.div>
 	);
 };
@@ -37,7 +36,7 @@ const Project = ({ title }) => {
 const Projects = () => {
 	return (
 		<>
-			<section id="projects" className="pt-10 pb-20">
+			<section id="projects" className="pt-10 pb-10">
 				{/* HEADINGS */}
 				<motion.div
 					className="lg:w-2/5 mx-auto text-center"
@@ -51,24 +50,25 @@ const Projects = () => {
 					}}
 				>
 					<div>
-						<p className="font-playfair font-semibold text-3xl">
+						<p className="font-playfair font-semibold text-4xl">
 							<span className="text-red">PRO</span>JECTS
 						</p>
-						<div className="flex justify-center mt-2">
-							<LineGradient width="w-2/4" />
+						<div className="flex justify-center mt-3">
+							<LineGradient width="w-1/4" />
 						</div>
 					</div>
-					<p className="mt-5 mb-10 text-xs">
-						Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-						fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-						purus nec eget eleifend ut elit.
-					</p>
+					<div className="mt-5 mb-5 w-full">
+
+						<p >
+							Checkout My Recent Projects
+						</p>
+					</div>
 				</motion.div>
 
 				{/* PROJECTS */}
 				<div className="flex justify-center">
 					<motion.div
-						className="ss:grid ss:grid-cols-3"
+						className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-3"
 						variants={container}
 						initial="hidden"
 						whileInView="visible"
@@ -82,7 +82,16 @@ const Projects = () => {
 							BEAUTIFUL USER INTERFACES
 						</div>
 						<Project title="Project 1" />
+						<Project title="Project 2" />
 
+						{/* ROW 2 */}
+						<Project title="Project 3" />
+						<Project title="Project 4" />
+						<Project title="Project 5" />
+
+						{/* ROW 3 */}
+						<Project title="Project 6" />
+						<Project title="Project 7" />
 						<div
 							className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

@@ -1,7 +1,3 @@
-import linkedIn from '../assets/linkedin.png'
-import twitter from '../assets/twitter.png'
-import facebook from '../assets/facebook.png'
-import github from '../assets/github.png'
 
 const SocialMediaIcons = () => {
 
@@ -16,7 +12,7 @@ const SocialMediaIcons = () => {
 			>
 				<img
 					alt="linkedin-link"
-					src={linkedIn}
+					src="../../assets/linkedin.png"
 				/>
 			</a>
 			<a
@@ -27,7 +23,7 @@ const SocialMediaIcons = () => {
 			>
 				<img
 					alt="twitter-link"
-					src={twitter}
+					src="../../assets/twitter.png"
 				/>
 			</a>
 			<a
@@ -38,7 +34,7 @@ const SocialMediaIcons = () => {
 			>
 				<img
 					alt="facebook-link"
-					src={facebook}
+					src="../../assets/facebook.png"
 				/>
 			</a>
 			<a
@@ -49,7 +45,7 @@ const SocialMediaIcons = () => {
 			>
 				<img
 					alt="github-link"
-					src={github}
+					src="../../assets/github.png"
 				/>
 			</a>
 
@@ -57,4 +53,4 @@ const SocialMediaIcons = () => {
 	)
 }
 
-export default SocialMediaIcons
+export default SocialMediaIcons;
