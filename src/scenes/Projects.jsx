@@ -26,7 +26,9 @@ const Project = ({ title }) => {
 				<p className="text-2xl font-playfair">{title}</p>
 				<p className="mt-7">
 					Checkout My Recent Projects
+
 				</p>
+
 			</div>
 			<img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
 		</motion.div>

@@ -60,7 +60,7 @@ const Landing = ({ setSelectedPage }) => {
 						</p>
 
 						<p className="mt-10 mb-7 text-sm text-center lg:text-start md:text-center">
-							I am a Front-End Web developer, purpose driven and easy going
+							Hi, I am a front-end web developer. I specialize in building and designing user interfaces for websites and web applications.  I have a passion for creating clean, intuitive, and visually appealing designs that provide a great user experience.
 						</p>
 					</motion.div>
 

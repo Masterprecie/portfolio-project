@@ -26,7 +26,7 @@ const MySkills = () => {
 						</p>
 						<LineGradient width="w-1/3" />
 						<p className="mt-5 mb-7 text-xs">
-							I am proficient in Bootstrap, Tailwind CSS and React Js. I will bring your design into reality.
+							I am proficient in Bootstrap, Tailwind CSS and React Js. I am always seeking to learn and stay up-to-date with the latest frontend development technologies and techniques.
 						</p>
 						<div className="flex gap-2 justify-between">
 							<div>
