@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { useState } from "react";
+//import { useEffect, useState } from "react";
 
 const Contact = () => {
 	const {
@@ -19,7 +19,7 @@ const Contact = () => {
 	};
 
 	// eslint-disable-next-line no-unused-vars
-	const [success, setSuccess] = useState(false);
+	// const [success, setSuccess] = useState(false);
 
 	// useEffect(() => {
 	// 	if (window.location.search.includes('success=true')) {
@@ -79,15 +79,15 @@ const Contact = () => {
 						}}
 						className="basis-1/2 mt-10 md:mt-10 lg:mt-0"
 					>
-						{success && (
+						{/* {success && (
 							<p style={{ color: "green" }}>Thanks for your message! </p>
-						)}
+						)} */}
 						<form
 							target="_blank"
 							onSubmit={onSubmit}
 							name="contact"
 							method="POST"
-							action="/contact/?success=true"
+							// action="/contact/?success=true"
 							data-netlify="true"
 						>
 							<input type="hidden" name="form-name" value="contact" />
