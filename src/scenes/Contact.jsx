@@ -1,6 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
 	const {
@@ -16,6 +17,14 @@ const Contact = () => {
 			e.preventDefault();
 		}
 	};
+
+	const [success, setSuccess] = useState(false);
+
+	useEffect(() => {
+		if (window.location.search.includes('success=true')) {
+			setSuccess(true);
+		}
+	}, []);
 
 	return (
 		<>
@@ -69,12 +78,18 @@ const Contact = () => {
 						}}
 						className="basis-1/2 mt-10 md:mt-10 lg:mt-0"
 					>
+						{success && (
+							<p style={{ color: "green" }}>Thanks for your message! </p>
+						)}
 						<form
 							target="_blank"
 							onSubmit={onSubmit}
-							action="https://formsubmit.co/6b05701e1b854b052268554dbcc1fd87"
+							name="contact"
 							method="POST"
+							action="/contact/?success=true"
+							data-netlify="true"
 						>
+							<input type="hidden" name="form-name" value="contact" />
 							<input
 								className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
 								type="text"
