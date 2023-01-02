@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Contact = () => {
 	const {
@@ -18,13 +18,14 @@ const Contact = () => {
 		}
 	};
 
+	// eslint-disable-next-line no-unused-vars
 	const [success, setSuccess] = useState(false);
 
-	useEffect(() => {
-		if (window.location.search.includes('success=true')) {
-			setSuccess(true);
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (window.location.search.includes('success=true')) {
+	// 		setSuccess(true);
+	// 	}
+	// }, []);
 
 	return (
 		<>
