@@ -49,7 +49,7 @@ const MyProjects = () => {
 
 						</div>
 						<div className="bg-slate-700">
-							<p className="text-white p-2 text-center">An Admin Dashboard Page </p>
+							<p className="text-white p-2 text-center">Admin Dashboard Page </p>
 						</div>
 					</div>
 					<div className="shadow-sm  bg-slate-400 p-3 hover:opacity-70 transition duration-500">
@@ -75,7 +75,7 @@ const MyProjects = () => {
 
 						</div>
 						<div className="bg-slate-700">
-							<p className="text-white p-2 text-center">A shopping bag website</p>
+							<p className="text-white p-2 text-center">A shopping cart website</p>
 						</div>
 					</div>
 					<div className="shadow-sm  bg-slate-400 p-3 hover:opacity-70 transition duration-500">

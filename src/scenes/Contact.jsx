@@ -87,6 +87,7 @@ const Contact = () => {
 							onSubmit={onSubmit}
 							name="contact"
 							method="POST"
+							action="/Success/"
 							// action="/contact/?success=true"
 							data-netlify="true"
 						>

@@ -79,7 +79,7 @@ const Landing = ({ setSelectedPage }) => {
 
 						<a
 							className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500 '
-							href="https://drive.google.com/file/d/1vhhtzOlQtbB6pPXOCY8J8MkCE-R2Vdqp/view?usp=share_link"
+							href="https://drive.google.com/file/d/1tNF5FVIXYJsM0U_3X4pLBZQzAEss2k8x/view?usp=share_link"							
 							target="_blank" rel='noreferrer'
 						>
 							Download CV
